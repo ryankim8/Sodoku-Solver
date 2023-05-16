@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Main.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- top header section -->
+      <h1>Sudoku Solver</h1>
+      <nav>
+        <ul>  
+          <h4>Created by Coder Siphon</h4>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+        <div class="box-left">
+          <h2>The Board</h2>
+          <p>Where the magic happens</p>
+          <table>
+            <tr>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div class = "hasNum" contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+          </table>
+          <script>
+            function handleInput(event) {
+              const cell = event.target;
+              const value = cell.textContent.trim();
+              if (value.length === 1 && /^[1-9]$/.test(value)) {
+                // Valid input, update the cell value
+                cell.classList.remove('error');
+                // You can store the value in a 2D array for later use
+              } else if (value.length > 1 || !/^[1-9]$/.test(value)) {
+                // Invalid input, clear the cell value and show an error
+                cell.classList.add('error');
+                cell.textContent = '';
+              }
+            }
+          </script>
+          <button onclick="solveSudokuAndUpdateGrid()">Get Grid Values</button>
+          <button onclick="location.reload()">Reset</button>
+
+
+        </div>
+        <div class="box-right">
+          <h2>Statistics</h2>
+          <p>If you're interested</p>
+          
+        </div>
+      </div>
+
+      
+
+    <footer>
+      <!-- footer section -->
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
